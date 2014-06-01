@@ -1,0 +1,7 @@
+AuthName "Page d’administration protégée. Merci."
+ 
+AuthType Basic
+ 
+AuthUserFile "c:\wamp\www\HIPIC\admin_news\.htpasswd"
+ 
+Require valid-user

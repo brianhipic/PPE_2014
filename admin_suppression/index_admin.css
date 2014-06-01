@@ -1,0 +1,142 @@
+
+body
+{
+	background-color:#f6f6f6;
+	font-family:arial, verdana, trebuchet MS;
+}
+
+table/*tableau*/
+{
+border: black;
+	border-collapse: collapse;
+	width: 80%/*taille*/
+}
+td
+{
+	background-color: #e9eaec;
+	border: thin solid black;
+	text-align: center;
+}
+th
+{
+	background-color: #bcbebb;
+	border: thin solid black;
+	color: #0066b0;
+}
+
+h1
+{
+	color: #0066b0;
+}
+
+
+header
+{
+
+	background:#6796DC; /*bleu*/
+	width:100%;
+	box-shadow:0px 2px 10px;
+
+}
+
+/* facebook */
+#icone1
+{
+	float:right;
+	margin-left:20px;
+	margin-top: 25px;
+}
+
+html, body
+{
+	margin:0;
+	padding:0;
+	width:100%;
+
+
+}
+
+
+
+a/*lien*/
+{
+	text-decoration: none;
+	color: #ba55d3;
+}
+
+a:hover/*souris sur le lien*/
+{
+	color: #344067;
+}
+/******************** menu de l'application ********************/
+
+#menu, #menu ul /* Liste */     
+{
+
+        padding : 0; /* pas de marge intérieure */
+        margin : 0; /* ni extérieure */
+        line-height : 21px; /* on définit une hauteur pour chaque élément */
+        text-align : center; /* on centre le texte qui se trouve dans la liste */
+}
+
+#menu /* Ensemble du menu */
+{
+		display:block;
+        font-weight : bold; /* on met le texte en gras */
+        font-family : Arial; 
+        font-size : 12px; /* hauteur du texte : 12 pixels */
+		height:25px;
+}
+
+#menu a /* Contenu des listes */
+{
+        display : block; /* on change le type d'élément, les liens deviennent des balises de type block */
+        
+        background : #1d66b0; /* couleur de fond */        
+        color : #fff; /* couleur du texte */
+        text-decoration : none; /* on supprime le style par défaut des liens*/
+        width : 144px; /* largeur */
+}
+
+#menu li /* Elements des listes */      
+{ 
+        float : left; 
+        border-right : 1px solid #fff; /* on met une bordure blanche à droite de chaque élément */
+}
+
+#menu li ul /* Sous-listes */
+{ 
+        position: absolute; /* Position absolue */
+        width: 144px; /* Largeur des sous-listes */
+        left: -999em; /* Hop, on envoie loin du champ de vision */
+}
+
+
+#menu li ul li /* Éléments de sous-listes */
+{
+       
+        border-top : 1px solid #fff; /* on met une bordure blanche en haut de chaque élément d'une sous liste */
+}
+
+#menu li ul ul 
+{
+        margin    : -22px 0 0 144px ; /* On décale les sous-sous-listes pour qu'elles ne soient pas au dessus des sous-listes */ 
+        border-left     : 1px solid #fff ; /* Petite bordure à gauche pour ne pas coller ... */      
+}
+
+#menu a:hover /* Lorsque la souris passe sur un des liens */    
+{
+        color: #000; /* On passe le texte en noir... */
+        background: #008885; /* ... et au contraire, le fond en blanc */
+}
+
+#menu li:hover ul ul, #menu li.sfhover ul ul /* Sous-sous-listes lorsque la souris passe sur un élément de liste */
+{
+        left: -999em; /* On expédie les sous-sous-listes hors du champ de vision */
+}
+
+#menu li:hover ul, #menu li li:hover ul, #menu li.sfhover ul, #menu li li.sfhover ul  /* Sous-listes lorsque la souris passe sur un élément de liste ET sous-sous-lites lorsque la souris passe sur un élément de sous-liste */
+{
+        left: auto; /* Repositionnement normal */
+        min-height: 0; /* Corrige un bug sous IE */
+}
